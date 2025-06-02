@@ -1,0 +1,268 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.face_attendance"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:2:5-64
+16-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:2:22-62
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:3:5-80
+17-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:3:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:4:5-79
+18-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:4:22-77
+19    <!--
+20 Required to query activities that can process text, see:
+21         https://developer.android.com/training/package-visibility and
+22         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+23
+24         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+25    -->
+26    <queries>
+26-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:43:5-48:15
+27        <intent>
+27-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:44:9-47:18
+28            <action android:name="android.intent.action.PROCESS_TEXT" />
+28-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:45:13-72
+28-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:45:21-70
+29
+30            <data android:mimeType="text/plain" />
+30-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:46:13-50
+30-->/Users/xor/Documents/masum/mobile_app/face_attendance/android/app/src/main/AndroidManifest.xml:46:19-48
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+34-->[:camera_android] /Users/xor/Documents/masum/mobile_app/face_attendance/build/camera_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-71
+34-->[:camera_android] /Users/xor/Documents/masum/mobile_app/face_attendance/build/camera_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-68
+35
+36    <permission
+36-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+37        android:name="com.example.face_attendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+38        android:protectionLevel="signature" />
+38-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+39
+40    <uses-permission android:name="com.example.face_attendance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+40-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+41    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+42    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+42-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+42-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.13.1] /Users/xor/.gradle/caches/transforms-3/52e18c112b3c464ebfad2622182d3ae8/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+47        android:debuggable="true"
+48        android:extractNativeLibs="false"
+49        android:icon="@mipmap/ic_launcher"
+50        android:label="face_attendance" >
+51        <activity
+52            android:name="com.example.face_attendance.MainActivity"
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54            android:exported="true"
+55            android:hardwareAccelerated="true"
+56            android:launchMode="singleTop"
+57            android:taskAffinity=""
+58            android:theme="@style/LaunchTheme"
+59            android:windowSoftInputMode="adjustResize" >
+60
+61            <!--
+62                 Specifies an Android theme to apply to this Activity as soon as
+63                 the Android process has started. This theme is visible to the user
+64                 while the Flutter UI initializes. After that, this theme continues
+65                 to determine the Window background behind the Flutter UI.
+66            -->
+67            <meta-data
+68                android:name="io.flutter.embedding.android.NormalTheme"
+69                android:resource="@style/NormalTheme" />
+70
+71            <intent-filter>
+72                <action android:name="android.intent.action.MAIN" />
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+82            android:name="flutterEmbedding"
+83            android:value="2" />
+84
+85        <service
+85-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:9:9-15:19
+86            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+86-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:10:13-91
+87            android:directBootAware="true"
+87-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:17:13-43
+88            android:exported="false" >
+88-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:11:13-37
+89            <meta-data
+89-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:12:13-14:85
+90                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
+90-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:13:17-114
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.1] /Users/xor/.gradle/caches/transforms-3/1c0f30385ec5037f2b4709fd66f44c10/transformed/jetified-play-services-mlkit-face-detection-17.0.1/AndroidManifest.xml:14:17-82
+92            <meta-data
+92-->[com.google.mlkit:vision-common:17.3.0] /Users/xor/.gradle/caches/transforms-3/372ef63538ad508845adae162f67eddc/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+93                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+93-->[com.google.mlkit:vision-common:17.3.0] /Users/xor/.gradle/caches/transforms-3/372ef63538ad508845adae162f67eddc/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:13:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.mlkit:vision-common:17.3.0] /Users/xor/.gradle/caches/transforms-3/372ef63538ad508845adae162f67eddc/transformed/jetified-vision-common-17.3.0/AndroidManifest.xml:14:17-82
+95            <meta-data
+95-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:20:13-22:85
+96                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+96-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:21:17-120
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:22:17-82
+98        </service>
+99
+100        <provider
+100-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:9:9-13:38
+101            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+101-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:10:13-78
+102            android:authorities="com.example.face_attendance.mlkitinitprovider"
+102-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:11:13-69
+103            android:exported="false"
+103-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:12:13-37
+104            android:initOrder="99" />
+104-->[com.google.mlkit:common:18.6.0] /Users/xor/.gradle/caches/transforms-3/3d889c1c9d8481c25a8fe96f3600e21a/transformed/jetified-common-18.6.0/AndroidManifest.xml:13:13-35
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:18.1.0] /Users/xor/.gradle/caches/transforms-3/531507112a6677d225c8c7d863856ffd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:18.1.0] /Users/xor/.gradle/caches/transforms-3/531507112a6677d225c8c7d863856ffd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:18.1.0] /Users/xor/.gradle/caches/transforms-3/531507112a6677d225c8c7d863856ffd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:18.1.0] /Users/xor/.gradle/caches/transforms-3/531507112a6677d225c8c7d863856ffd/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:18.1.0] /Users/xor/.gradle/caches/transforms-3/f865afd195d84294f3f1f172767d1ff2/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:18.1.0] /Users/xor/.gradle/caches/transforms-3/f865afd195d84294f3f1f172767d1ff2/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:18.1.0] /Users/xor/.gradle/caches/transforms-3/f865afd195d84294f3f1f172767d1ff2/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+114
+115        <uses-library
+115-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+116            android:name="androidx.window.extensions"
+116-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+117            android:required="false" />
+117-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+118        <uses-library
+118-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+119            android:name="androidx.window.sidecar"
+119-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+120            android:required="false" />
+120-->[androidx.window:window:1.2.0] /Users/xor/.gradle/caches/transforms-3/32e05b2f2f5bc4b18c72b8f35e0189d5/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+121
+122        <provider
+122-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+124            android:authorities="com.example.face_attendance.androidx-startup"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/xor/.gradle/caches/transforms-3/f3276b02d8a2d4072bcf8aeaa7cb1f1d/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/xor/.gradle/caches/transforms-3/e3898096c8912b5e8859d9d38def915a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/xor/.gradle/caches/transforms-3/a19dee462ea762898c53bd196322ade5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/xor/.gradle/caches/transforms-3/efbb00ee4c4e7d9301ae8a0b6b0f7120/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+170    </application>
+171
+172</manifest>
